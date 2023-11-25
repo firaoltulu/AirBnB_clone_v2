@@ -13,8 +13,8 @@ def do_pack():
     """This Function Create a tar gzipped archive of the directory web_static."""
     dt = datetime.utcnow()
     file = "versions/web_static_{}{}{}{}{}{}.tgz".format(
-        dt.year, dt.month, dt.day, dt.hour, dt.minute, dt.second
-    )
+            dt.year, dt.month, dt.day, dt.hour, dt.minute, dt.second
+            )
     if os.path.isdir("versions") is False:
         if local("mkdir -p versions").failed is True:
             return None
@@ -43,35 +43,35 @@ def do_deploy(archive_path):
     if run("mkdir -p /data/web_static/releases/{}/".format(name)).failed is True:
         return False
     if (
-        run(
-            "tar -xzf /tmp/{} -C /data/web_static/releases/{}/".format(file, name)
-        ).failed
-        is True
-    ):
+            run(
+                "tar -xzf /tmp/{} -C /data/web_static/releases/{}/".format(file, name)
+                ).failed
+            is True
+            ):
         return False
     if run("rm /tmp/{}".format(file)).failed is True:
         return False
     if (
-        run(
-            "mv /data/web_static/releases/{}/web_static/* "
-            "/data/web_static/releases/{}/".format(name, name)
-        ).failed
-        is True
-    ):
+            run(
+                "mv /data/web_static/releases/{}/web_static/* "
+                "/data/web_static/releases/{}/".format(name, name)
+                ).failed
+            is True
+            ):
         return False
     if (
-        run("rm -rf /data/web_static/releases/{}/web_static".format(name)).failed
-        is True
-    ):
+            run("rm -rf /data/web_static/releases/{}/web_static".format(name)).failed
+            is True
+            ):
         return False
     if run("rm -rf /data/web_static/current").failed is True:
         return False
     if (
-        run(
-            "ln -s /data/web_static/releases/{}/ /data/web_static/current".format(name)
-        ).failed
-        is True
-    ):
+            run(
+                "ln -s /data/web_static/releases/{}/ /data/web_static/current".format(name)
+                ).failed
+            is True
+            ):
         return False
     return True
 
