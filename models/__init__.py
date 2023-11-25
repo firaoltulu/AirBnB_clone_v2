@@ -1,5 +1,4 @@
 #!/usr/bin/python3
-"""This module instantiates an object of class FileStorage"""
 """Instantiates a storage object.
 
 -> If the environmental variable 'HBNB_TYPE_STORAGE' is set to 'db',

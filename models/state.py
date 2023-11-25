@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-""" State Module for HBNB project """
+"""Defines the State class."""
 import models
 from os import getenv
 from models.base_model import Base
@@ -10,10 +10,8 @@ from sqlalchemy import String
 from sqlalchemy.orm import relationship
 
 
-class State(BaseModel):
-    """State class"""
-
-    """Thins Class Represents a state for a MySQL database.
+class State(BaseModel, Base):
+    """Represents a state for a MySQL database.
 
     Inherits from SQLAlchemy Base and links to the MySQL table states.
 
