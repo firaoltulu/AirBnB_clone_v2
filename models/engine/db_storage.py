@@ -16,7 +16,7 @@ from sqlalchemy.orm import sessionmaker
 
 
 class DBStorage:
-    """Represents a database storage engine.
+    """This class Represents a database storage engine.
 
     Attributes:
         __engine (sqlalchemy.Engine): The working SQLAlchemy engine.

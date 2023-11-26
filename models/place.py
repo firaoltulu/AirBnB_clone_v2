@@ -36,9 +36,7 @@ association_table = Table(
 
 
 class Place(BaseModel, Base):
-    """Represents a Place for a MySQL database.
-
-    Inherits from SQLAlchemy Base and links to the MySQL table places.
+    """This Class Represents a Place for a MySQL database.
 
     Attributes:
         __tablename__ (str): The name of the MySQL table to store places.
