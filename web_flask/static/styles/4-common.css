@@ -1,0 +1,32 @@
+@charset "UTF-8";
+
+html {
+    min-height: 100%;
+    position: relative;
+}
+
+body {
+    display: flex;
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    flex-direction: column;
+    min-height: 100vh;
+    color: #484848;
+    font-family: Circular, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+main {
+    flex-grow: 1;
+    flex-shrink: 0;
+}
+
+div.container {
+    align-items: stretch;
+    max-width: 1000px;
+    flex-direction: column;
+    margin: 30px auto;
+    display: flex;
+
+}

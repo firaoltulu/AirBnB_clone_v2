@@ -1,0 +1,96 @@
+@charset "UTF-8";
+/** Author: Firaol Tulu */
+
+.container .places {
+    justify-content: space-around;
+    z-index: 1;
+    width: 100%;
+    flex-flow: row wrap;
+    position: relative;
+    align-items: stretch;
+    display: flex;
+}
+
+.container .places h1 {
+    width: 100%;
+    font-size: 30px;
+    margin: 30px 0 0 10px;
+}
+
+.container .places article {
+    padding: 20px 20px;
+    position: relative;
+    border: 1px solid #FF5A5F;
+    border-radius: 4px;
+    flex-direction: column;
+    display: flex;
+    width: 390px;
+    margin: 20px 20px;
+}
+
+.container .places h2 {
+    flex-grow: 1;
+    margin: 10px 0 30px 0;
+    font-size: 30px;
+    text-align: center;
+}
+
+.container .places .title {
+    flex-direction: row;
+    display: flex;
+}
+
+.container .places .price_by_night {
+    text-align: center;
+    line-height: 60px;
+    border: 4px solid #FF5A5F;
+    min-width: 60px;
+    height: 60px;
+    color: #FF5A5F;
+    border-radius: 50%;
+    font-size: 30px;
+}
+
+.container .places .information .max_guest,
+.container .places .information .number_rooms,
+.container .places .information .number_bathrooms {
+    text-align: center;
+    line-height: 25px;
+    padding: 10px 0 0 0;
+    background-position: center 5px;
+    width: 100px;
+    background-repeat: no-repeat;
+}
+
+.container .places .information {
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+    border-bottom: 1px solid #DDDDDD;
+    border-top: 1px solid #DDDDDD;
+}
+
+
+.container .places .user {
+    margin: 20px 0 5px 0;
+}
+
+@media screen and (max-width: 600px) {
+
+    .container .places .information {
+        height: auto;
+    }
+
+    .container .places .price_by_night {
+        text-align: center;
+        border: 2px solid #FF5A5F;
+        height: 40px;
+        min-width: 40px;
+        top: 3px;
+        right: 3px;
+        font-size: 20px;
+        line-height: 42px;
+
+    }
+}

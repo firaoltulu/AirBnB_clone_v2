@@ -1,0 +1,12 @@
+@charset "UTF-8";
+
+header {
+    background-image: url("../images/logo.png");
+    background-position: 20px 50%;
+    height: 70px;
+    background-repeat: no-repeat;
+    background-color: #FFFFFF;
+    border-bottom: 1px solid #CCCCCC;
+    width: 100%;
+
+}
